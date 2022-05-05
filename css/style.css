@@ -1,0 +1,545 @@
+/*-------------------------------- INDEX --------------------------------*/
+*{
+	margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    background-color: black;
+    background-image: url(../Recursos/PMC1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.index__container{
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "footer";
+    grid-template-rows: 1fr 3fr 0.5fr;
+}
+
+header{
+    grid-area: header;
+    color: rgb(255, 0, 0);
+    display:flex;
+    justify-content: center;
+}
+
+.destacados__menu{
+    display: flex;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+.item__menu{
+    text-decoration: none;    
+    padding: 10px;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_section1{
+    display: flex;
+}
+
+.main__titulo{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+.main__destacado__reglas{
+    text-align: center;
+    width: 30%;
+    
+    background-color: black;
+    border-radius: 10px;
+}
+
+.main__regla{
+    color: rgb(255, 0, 0);
+    font-family: impact;
+    letter-spacing: 3px;
+}
+
+.main__reglas{
+    color:rgb(202, 202, 202);
+    text-decoration-line: underline;
+}
+
+.main__regla5{
+    font-family: "courier new";
+    text-decoration-line: line-through;
+}
+
+.main__video{
+    border-bottom: solid 15px rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+}
+
+.main__titulo2{
+    font-family: 'Courier New', Courier, monospace;
+    color: darkmagenta;
+    text-align: center;
+}
+
+.main__rutina_lista{
+    font-family: 'Square Peg', cursive;
+    color: turquoise;
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*
+    
+
+    https://codepen.io/enxaneta/full/adLPwv
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+
+
+
+/*--------------------------------CONTACTO--------------------------------*/
+.fondo__contacto{
+    background-image: url(../Recursos/ojo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: rgb(30, 30, 30);
+}
+
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-family: 'Open Sans',  sans-serif;
+
+}
+
+.link__persona{
+    color: rgb(255, 0, 0);
+}
+
+.formas__contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.destacado__mensajeria{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 0, 0);
+}
+
+.titulo__mensajeria{
+    font-size: 25px;
+}
+.mensajerias{
+    text-decoration:underline;
+    font-size: 16px;
+}
+
+/*--------------------------------MITOS Y LEYENDAS--------------------------------*/
+
+.fondo__mitos_y_leyendas{
+    background-image: url(../Recursos/void.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.titulo__mitos{
+    text-align: center;
+}
+
+.divs__mitos{
+    
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color:snow;
+    color: black;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+/*--------------------------------NUESTROS ARTISTAS--------------------------------*/
+.fondo__artistas{
+    background-image: url(../Recursos/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.artistas__soulster{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.renders__soulster{ 
+    display: grid; /* container*/
+    border: 10px solid purple;
+
+    /*como se declara una fila,  infitinas*/
+    grid-template-rows: 32% 32% 32%;
+    /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
+    grid-template-columns: 50% 50%;
+    /*espacio entre celdas*/
+    gap: 10px;
+}
+
+.renders__items{
+    border: 5px solid black;
+    background-size: cover;
+    justify-self: center;
+    background-attachment: inherit;
+}
+
+/*.renders__soulster{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
+
+.sangre__y__oxido{
+    font-size: 16px;
+    background-color: black;
+    color: blueviolet;
+    border-radius: 10px;
+}
+
+
+.artistas__valtiel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*
+.dibujos__valtiel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+*/
+
+
+
+.dibujos__valtiel{
+    display:grid;
+    border: 10px solid rgb(81, 131, 138);
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    gap: 3px;
+    background-position: center;
+}
+
+.dibujos__items{
+    border:5px solid rgb(156, 0, 0);
+    justify-self: center;
+    background-size: cover;
+    background-position: inherit;
+}
+
+.artistas__lucho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.videos__lucho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+*/
+/*--------------------------------QUIENES SOMOS--------------------------------*/
+
+
+.fondo__quienes_somos{
+    background-image: url(../Recursos/quienes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.titulo__quienes{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.destacados__PMC{   
+    display: flex;
+    justify-content: center;
+}
+
+.PMC__video{
+    border-top: solid rgb(255, 0, 0);
+    border-bottom: solid rgb(255, 0, 0);
+    border-left: solid rgb(255, 0, 0);
+    border-right: solid rgb(255, 0 , 0);
+}
+
+.destacados__quienes{
+    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+.titulo__quienes2{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.destacados__soulster{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.titulo__soulster{
+    color: blueviolet;
+}
+
+.img__soulster{    
+    max-height: 400px;
+}
+
+.dl__soulster{
+    color: blueviolet;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.destacados__camila{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo__camila{
+    color: green
+}
+
+.img__camila{
+    max-height: 400px;
+}
+
+.dl__camila{
+    color: green;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.dd__personajes{
+    font-size: 10px;
+    font-family:'Segoe UI', sans-serif;
+}
+.destacados__valtiel{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo__valtiel{
+    color:turquoise;
+}
+
+.img__valtiel{
+    max-height: 400px;
+}
+
+.dl__valtiel{
+    color: turquoise;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.destacados__lucho{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo__lucho{
+    color: rgb(255, 174, 0);
+}
+
+.img__lucho{
+    max-height: 400px;
+}
+
+.dl__lucho{
+    color: rgb(255, 174, 0);
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+/*----------------GRID---------------*/
+/*
+.grid__container{
+    display:grid;
+    border: 12px solid purple;
+
+
+    /*como se declara una fila,  infitinas*/
+    /*grid-template-rows: 150px 150px 150px 150px;
+
+    /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
+   /* grid-template-columns: 1fr 1fr 1fr;
+
+    /*espacio entre celdas*/
+  /*  gap: 15px
+}*/
+/*
+.grid__item{
+    border: 5px solid black;
+}
+
+.grid__uno{
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+.grid__cuatro{
+    grid-row:2/5;
+    grid-column: 2/3;
+}
+
+.grid__cinco{
+    grid-row:2/4;
+    grid-column:3/4;
+}
+*/
+/*
+.grid__container{
+    display: grid;
+    grid-template-rows: 70px 500px 1fr;
+    grid-template-areas:"header header header header"
+                        "main main main aside"
+                        "footer footer footer footer";
+    gap:10px;
+}
+*/
+
+/*
+.grid__container{
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+}
+*/
+
+/*  MEDIDAS RELATIVAS
+    REM--Es una medida estandar que se multiplica y toma de base el tamaño minimo de la letra
+        del dispositivo(32px 1 REM= 32px) (12px 1 REM= 12px)
+
+    EM-- Toma de base el tamaño minimo de M del dispositivo
+
+    PORCENTAJES-- Son las mas faciles, las menos recomendadas
+
+*/
+
+
+/*tablet */
+@media (min-width: 541px) and (max-width: 720px){
+    
+    .artistas__soulster{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .renders__soulster{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .renders__items{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .dibujos__valtiel{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+    }
+    
+    .dibujos__items{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .main__video{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+/*phone */
+@media (min-width: 320px) and (max-width: 540px){
+    .artistas__soulster{
+        max-width:100%;
+    }
+    .renders__soulster{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    img{
+        max-width: 350px;
+    }
+    .renders__items{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .dibujos__valtiel{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+    }
+    .dibujos__items{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .videos__lucho{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .main__video{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
