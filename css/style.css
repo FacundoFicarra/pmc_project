@@ -59,7 +59,7 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 39%;
+    width: 40%;
     background-color: black;
     border-radius: 10px;
     list-style:none
@@ -86,7 +86,11 @@ main{
     display: flex;
     justify-content: center;
 }
-
+.main__section2{
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+}
 .main__titulo2{
     font-family: 'Courier New', Courier, monospace;
     color: darkmagenta;
@@ -199,7 +203,8 @@ main{
 
 .renders__soulster{ 
     display: grid; /* container*/
-    border: 10px solid purple;
+    border-top: 10px solid purple;
+    border-bottom: 10px solid purple;
 
     /*como se declara una fila,  infitinas*/
     grid-template-rows: 32% 32% 32%;
@@ -247,30 +252,32 @@ main{
 
 .dibujos__valtiel{
     display:grid;
-    border: 10px solid rgb(81, 131, 138);
+    border-top: 10px solid rgb(81, 131, 138);
+    border-bottom: 10px solid rgb(81, 131, 138);
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
     gap: 3px;
-    background-position: center;
 }
 
 .dibujos__items{
-    border:5px solid rgb(156, 0, 0);
-    justify-self: center;
+    border:5px solid red;
     background-size: cover;
+    justify-self: center;
     background-position: inherit;
 }
 
 .artistas__lucho{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    justify-items: center;
 }
 
 .videos__lucho{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
 */
@@ -397,6 +404,7 @@ main{
 }
 
 .titulo__lucho{
+    justify-self: center;
     color: rgb(255, 174, 0);
 }
 
@@ -422,10 +430,10 @@ main{
     /*grid-template-rows: 150px 150px 150px 150px;
 
     /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
-   /* grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;
 
     /*espacio entre celdas*/
-  /*  gap: 15px
+    /*  gap: 15px
 }*/
 /*
 .grid__item{
@@ -480,6 +488,11 @@ main{
 /*tablet */
 @media (min-width: 541px) and (max-width: 720px){
     
+    .main__video{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
     .artistas__soulster{
         max-width: 100%;
         max-height: 100%;
@@ -495,6 +508,7 @@ main{
         max-height: 100%;
     }
     
+    
     .dibujos__valtiel{
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
@@ -505,14 +519,46 @@ main{
         max-width: 100%;
         max-height: 100%;
     }
-    
-    .main__video{
-        max-width: 100%;
-        max-height: 100%;
+    .videos__lucho{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
+    .video__item{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    
 }
 /*phone */
 @media (min-width: 320px) and (max-width: 540px){
+    .fondo{
+        width: 100%;
+        height: 100%;
+    }
+    .fondo__artistas{
+        width: 100%;
+        height: 100%;}
+    .main__video{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .main__destacado__reglas{
+        width: 100%;
+    }
+    .main__section1{
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .main__section2{
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .main__rutina_lista{
+        width: 100%;
+    }
     .item__menu{
         font-size: 10px;
     }
@@ -523,10 +569,11 @@ main{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-        max-width: 370px;
+        max-width: 100%;
     }
     img{
-        max-width: 350px;
+        max-width: 100%;
+        max-height: 100%;
     }
     .renders__items{
         max-width: 100%;
@@ -536,19 +583,19 @@ main{
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
         grid-template-columns: 100%;
-        max-width: 370px;
+        max-width: 100%;
     }
     .dibujos__items{
         max-width: 100%;
         max-height: 100%;
     }
     .videos__lucho{
-        max-width: 350px;
-        max-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-
-    .main__video{
+    .video__item{
         max-width: 350px;
-        max-height: 100%;
+        max-height: 350px;
     }
 }
