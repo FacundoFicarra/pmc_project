@@ -284,14 +284,7 @@ main{
 /*--------------------------------QUIENES SOMOS--------------------------------*/
 
 
-.fondo__quienes_somos{
-    background-image: url(../Recursos/quienes.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: rgb(0, 0, 0);
-}
+
 
 .titulo__quienes{
     display: flex;
@@ -418,7 +411,9 @@ main{
     border-radius: 5px;
 }
 
-
+.fondo__quienes_somos{
+    background-color: rgb(0, 0, 0);
+}
 /*----------------GRID---------------*/
 /*
 .grid__container{
