@@ -415,18 +415,6 @@ main{
     background-color: rgb(30, 30, 30);
 }
 
-.boton__menu{
-    color: white;
-}
-
-.titulo{
-    font-size: 30px;
-    text-align: center;
-    color: rgb(255, 0, 0);
-    font-family: 'Open Sans',  sans-serif;
-
-}
-
 .link__persona{
     color: rgb(255, 0, 0);
 }
@@ -440,12 +428,6 @@ main{
     align-content: center;
 }
 
-.formas__contacto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-}
-
 .destacado__mensajeria{
     display: flex;
     flex-direction: column;
@@ -455,11 +437,6 @@ main{
 .titulo__mensajeria{
     font-size: 25px;
 }
-.mensajerias{
-    text-decoration:underline;
-    font-size: 16px;
-}
-
 /*----------------GRID---------------*/
 /*
 .grid__container{
