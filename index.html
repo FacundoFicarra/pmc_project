@@ -8,17 +8,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- BOOTSTRAP-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>PMC</title>
 </head>
 
 
 <body class="index__container">
-    <section class="fondo" >
 
+<section class="fondo" >
     <header> <!--cabeza de la pag-->
-        
-        <nav > <!--menu principal--> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler boton__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: grey;">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="../PMC_Ficarra/index.html" style="color: rgb(255, 255, 255)">Inicio</a>
+                            <a class="nav-link" href="../PMC_Ficarra/Pages/contacto.html" style="color: rgb(255, 255, 255)">Contactanos</a>
+                            <a class="nav-link" href="../PMC_Ficarra/Pages/mitos_y_leyendas.html" style="color: rgb(255, 255, 255)">Mitos y leyendas</a>
+                            <a class="nav-link" href="../PMC_Ficarra/Pages/nuestros_artistas.html" style="color: rgb(255, 255, 255)">¡Nuestros artistas!</a>
+                            <a class="nav-link" href="../PMC_Ficarra/Pages/quienes_somos.html" style="color: rgb(255, 255, 255)">¿Quienes somos?</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    
+        <!--<nav > menu principal 
             <ul class="destacados__menu">
                 <li class="item__menu"><a href="index.html">Inicio</a></li>
                 <li class="item__menu"><a href="Pages/contacto.html"> Contactanos </a></li>
@@ -26,14 +46,16 @@
                 <li class="item__menu"><a href="Pages/mitos_y_leyendas.html"> Mitos y leyendas </a></li>
                 <li class="item__menu"><a href="Pages/nuestros_artistas.html"> Nuestros artistas </a></li>
             </ul>
-        </nav>
+        </nav>-->
     </header>
     
 
     <main>
         <!--acá adentro va todo de la pag-->
+        
+        <h1 class="main__titulo">Welcome to Post Mortem!</h1>
+        
         <section class="main__section1">
-            <h1 class="main__titulo">Welcome to Post Mortem!</h1>
             <h2 class="main__titulo">Nuestras leyes</h2>
             <ul class="main__destacado__reglas"><!-- lista desordenada -->
                 <li class="item__regla"> No preguntar por las leyes </li><!--ITEMS-->
@@ -43,9 +65,9 @@
                 <li class="item__reglas"> ver la ley 4 </li>
                 <li class="item__regla5"> la razón solo la tiene el consejo</li>
             </ul>
-            <section class="main__video">
+            <div class="main__video">
                 <iframe width="520px" height="315" src="https://www.youtube.com/embed/aCppd1Mwg8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>    
+            </div>    
             <section class="main__section2">
                 <h2 class="main__titulo2">✨✨ Nuestra rutina como grupo ✨✨</h2>
                 <ol class="main__rutina_lista" ><!-- lista numerica-->
@@ -57,12 +79,22 @@
                     <li > Alimentar pinguinos </li>
                     <li > Repetir </li>
                 </ol>
-            </section>    
+            </section> 
+            <h3 class="titulo__biblicos">👼 Frases biblicos👼</h3>
+            <div class="items__biblicos">
+                <a class="pmc__desc__S"> "No todos saben donde van a parar pero lo que si saben es como pararse sin titubear sobre otros"-S</a>
+                <a class="pmc__desc__C"> "No hay nada fácil en la vida, excepto mear en la ducha "-C</a>
+                <a class="pmc__desc__F"> "Con el tiempo el caos siembra paz, pero la paz no existe si el caos es la naturaleza permanentemente" -F</a>
+                <a class="pmc__desc__L"> "Las gallinas son como caniches"-L</a>
+            </div>
+            <span class="advertencia">  Cabe destacar que este es un grupo de amigos, es real y grosero, todo lo dicho, escrito y hecho en el grupo tiene la finalidad de realizarlo con y para el humor al igual que la apariencia ochentera de la pagina. </span>
         </section>
     </main>
         <footer><!--fin de la pag, solo frases-->
-    <span class="footer"> Todos los derechos reservados por los propietarios PMC 2016-Actualidad </span> 
+            <span class="footer"> Todos los derechos reservados por los propietarios PMC 2016-Actualidad.</span> 
         </footer>
 </section>
+<!--SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
