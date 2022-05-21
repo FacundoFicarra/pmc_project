@@ -1,0 +1,642 @@
+@import 'variables';
+
+*{
+	margin: 0;
+    padding: 0;
+}
+.advertencia{
+    text-align: center;
+    font-size: 10px ;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+.fondo{
+    background-color: $color-principal;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    &__mitos_y_leyendas{
+        background-color: $color-principal;
+        background-image: url(../Recursos/void.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+    }
+    &__artistas{
+        background-image: url(../Recursos/fondo.png);
+        background-position: center;
+        background-size: cover;
+        background-attachment:fixed;
+    }
+    &__quienes__somos{
+        background-color: $color-principal;
+    }
+    &__contacto{
+        background-image: url(../Recursos/ojo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        background-attachment: fixed;
+        background-color: rgb(30, 30, 30);
+    }
+}
+
+header{
+    display:flex;
+    justify-content: center;
+}
+
+.icon__link{
+    height: 50px;
+    background-color: $color-principal;
+    &:hover{
+        -webkit-animation: tiembla 0.1s infinite;
+    }
+}
+
+.pmc{
+    &__desc__S{
+        font-size: $font-principal;
+        color: rgb(185, 157, 202);
+    }
+    &__desc__C{
+        font-size: $font-principal;
+        color: rgb(157, 202, 161);
+    }
+    &__desc__F{
+        font-size: $font-principal;
+        color: rgb(163, 168, 163);}
+    &__desc__L{
+        font-size: $font-principal;
+        color: rgb(141, 141, 250);}
+    &__video{
+        border-top: solid rgb(255, 0, 0);
+        border-bottom: solid rgb(255, 0, 0);
+        border-left: solid rgb(255, 0, 0);
+        border-right: solid rgb(255, 0 , 0);
+    }
+}
+.destacados{
+    &__menu{
+    display: flex;
+    text-transform: uppercase;
+    list-style-type: none;
+    }
+    &__PMC{   
+        display: flex;
+        justify-content: center;
+    }
+    &__quienes{
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: $font-principal;
+        text-decoration:none;
+    }
+    &__soulster{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+    &__camila{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__valtiel{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__lucho{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.main{
+    &__section{
+        display: grid;   
+        grid-template-columns: 1fr; 
+    }
+    &__fondos{
+        background: url(../Recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    }
+    &__titulo{
+        text-align: left;
+        color: #B4A5A5;
+        font-size: 30px;
+    }
+    &__destacado__reglas{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        list-style:none
+    }
+    &__video{
+        border-bottom: solid 15px #301B3F;
+        display: flex;
+        justify-content: left;
+    }
+    &__rutina_lista{
+        font-family: 'Square Peg', cursive;
+        color: turquoise;
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+.bienvenida__titulo{
+    text-align: center;    
+    color: #B4A5A5;
+}
+.desc__breve{
+    font-size: $font-principal;
+    color: #ffffff;
+}
+
+.item{
+    &__menu{
+        text-decoration: none;    
+        padding: 10px;
+    }
+    &__regla{
+        color: rgb(255, 0, 0);
+        font-family: impact;
+        letter-spacing: 3px;
+    }
+    &__reglas{
+        color:rgb(202, 202, 202);
+        text-decoration-line: underline;
+    }
+    &__regla5{
+        font-family: "courier new";
+        text-decoration-line: line-through;
+        color: #1a1b20;
+    }
+}
+
+.section__rutina{
+    background: url(../Recursos/micrf.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+}
+.titulo{
+    &__rutina{
+        font-family: 'Courier New', Courier, monospace;
+        color: darkmagenta;
+        text-align: left;
+    }
+    &__biblicos{
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+    }
+    &__mitos{
+        text-align: center;
+    }
+    &__quienes{
+        align-content: center;
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+        border-radius: 20px;
+    }
+    &__quienes2{
+        color: red;
+        display: flex;
+        justify-content: center;
+    }
+    &__soulster{
+    color: blueviolet;
+    }
+    &__camila{
+        color: green
+    }
+    &__valtiel{
+        color:turquoise;
+    }
+    &__lucho{
+        justify-self: center;
+        color: rgb(255, 174, 0);
+    }
+    &__mensajeria{
+        font-size: $font-principal;
+    }
+}
+.items__biblicos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: underline;
+    width: 40%;
+}
+
+/*
+    
+
+    https://codepen.io/enxaneta/full/adLPwv
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+
+
+
+
+
+/*--------------------------------MITOS Y LEYENDAS--------------------------------*/
+
+
+.divs__mitos{
+    font-size: $font-principal;
+    border-radius: 10px;
+    
+}
+
+.img{
+    &__mitos{
+    display: flex;
+
+    justify-content: center;
+    }
+    &__oculto{
+        justify-self: center;
+        gap: 10px;
+    }
+    &__person{
+        justify-self: center;
+    }
+    &__soulster{    
+        max-height: 400px;
+    }
+    &__camila{
+        max-height: 400px;
+    }
+    &__valtiel{
+        max-height: 400px;
+    }
+    &__lucho{
+        max-height: 400px;
+    }
+}
+.div{
+    &__consejo{
+        display: grid;
+    }
+    &__img__oculto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    &__person{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+.son__humanos{
+    text-align: center;
+}
+
+.hover__zoom:hover{
+    transform:scale(2);
+}
+
+.black__rod{color: black;
+    background-color: $color-principal;
+}
+.donde__estan{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+
+
+/* PSEUDO CLASES
+:active
+:hoover
+:visited
+:first-child
+:last-child
+*/
+
+a{
+    &:visited{
+    content: "✔";
+    color: pink;
+    }
+    &:active{
+        color: blue;
+    }
+}
+/*--------------------------------NUESTROS ARTISTAS--------------------------------*/
+
+
+.artistas{
+    &__soulster{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__valtiel{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__lucho{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        justify-items: center;
+    }
+}
+
+
+
+.renders{
+    &__soulster{ 
+        display: grid; /* container*/
+        border-top: 10px solid purple;
+        border-bottom: 10px solid purple;
+    
+        /*como se declara una fila,  infitinas*/
+        grid-template-rows: 32% 32% 32%;
+        /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
+        grid-template-columns: 50% 50%;
+        /*espacio entre celdas*/
+        gap: 10px;
+    }
+    &__items{
+        border: 5px solid black;
+        background-size: cover;
+        justify-self: center;
+        background-attachment: inherit;
+    }
+}
+
+.sangre__y__oxido{
+    font-size: 16px;
+    background-color: $color-principal;
+    color: blueviolet;
+    border-radius: 10px;
+}
+
+.dibujos{
+    &__valtiel{
+        display:grid;
+        border-top: 10px solid rgb(81, 131, 138);
+        border-bottom: 10px solid rgb(81, 131, 138);
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        gap: 3px;
+    }
+    &__items{
+        border:5px solid red;
+        background-size: cover;
+        justify-self: center;
+        background-position: inherit;
+    }
+}
+
+.videos__lucho{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+
+/*--------------------------------QUIENES SOMOS--------------------------------*/
+
+
+.dl{
+    &__soulster{
+        color: blueviolet;
+        background-color: $color-principal;
+        border-radius: 5px;
+    }
+    &__camila{
+        color: green;
+        background-color: $color-principal;
+        border-radius: 5px;
+    }
+    &__valtiel{
+        color: turquoise;
+        background-color: $color-principal;
+        border-radius: 5px;
+    }
+    &__lucho{
+        color: rgb(255, 174, 0);
+        background-color: $color-principal;
+        border-radius: 5px;
+    }
+}
+
+.dd__personajes{
+    font-size: 10px;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/*--------------------------------CONTACTO--------------------------------*/
+
+
+.link__persona{
+    color: rgb(255, 0, 0);
+}
+.redes__contacto{
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.destacado__mensajeria{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 0, 0);
+}
+
+@-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
+}
+
+@media (min-width: 720px) and (max-width: 1200px){
+    
+    .fondo__artistas{
+        width: fit-content;
+    }
+    .renders__soulster{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .div__person{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+/*tablet */
+
+@media (min-width: 541px) and (max-width: 720px){
+    
+    .main__video{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .artistas__soulster{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .renders__soulster{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .renders__items{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .dibujos__valtiel{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+    }
+    
+    .dibujos__items{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .videos__lucho{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .video__item{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .div__person{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+/*phone */
+@media (min-width: 320px) and (max-width: 540px){
+    
+    .fondo{
+        width: 100%;
+        height: 100%;
+    }
+    .fondo__artistas{
+        width: 100%;
+        height: 100%;
+    }
+    .main__fondos{
+        background:black;
+    }
+    .main__video{
+        max-width: 320px;
+        max-height: 320px;
+    }
+    .main__destacado__reglas{
+        width: 100%;
+    }
+    .main__section1{
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .main__section2{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .main__rutina_lista{
+        width: 100%;
+    }
+    .item__menu{
+        font-size: 10px;
+    }
+    .items__biblicos{
+        width: 100%;
+    }
+    .artistas__soulster{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .titulo__soulster{
+        font-size: 50px;
+    }
+
+    .soulster__historia{
+        color: blueviolet;
+        text-align: center;
+    }
+    .renders__soulster{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .renders__items{
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .dibujos__valtiel{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .dibujos__items{
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .videos__lucho{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+    }
+    .video__item{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .div__person{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .donde__estan{
+        max-width: 350px;
+    }
+}

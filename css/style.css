@@ -1,139 +1,218 @@
-/*-------------------------------- INDEX --------------------------------*/
-*{
-	margin: 0;
-    padding: 0;
-}
-.advertencia{
-    text-align: center;
-    font-size: 10px ;
-    color: rgb(255, 255, 255);
-    background-color: red;
-}
-.fondo{
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.advertencia {
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  background-color: red; }
+
+.fondo {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .fondo__mitos_y_leyendas {
     background-color: black;
-    /*background-image: url(../Recursos/PMC1.png);*/
+    background-image: url(../Recursos/void.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-}
+    background-attachment: fixed;
+    color: white; }
+  .fondo__artistas {
+    background-image: url(../Recursos/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; }
+  .fondo__quienes__somos {
+    background-color: black; }
+  .fondo__contacto {
+    background-image: url(../Recursos/ojo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: #1e1e1e; }
 
-header{
-    display:flex;
-    justify-content: center;
-}
+header {
+  display: flex;
+  justify-content: center; }
 
-.icon__link{
-    height: 50px;
-    background-color: black;
-}
-.icon__link:hover{
-    -webkit-animation: tiembla 0.1s infinite;
-}
-.pmc__desc__S{
-    font-size: 20px;
-    color: rgb(185, 157, 202);
-}
-.pmc__desc__C{
-    font-size: 20px;
-    color: rgb(157, 202, 161);
-}
-.pmc__desc__F{
-    font-size: 20px;
-    color: rgb(163, 168, 163);
-}
-.pmc__desc__L{
-    font-size: 20px;
-    color: rgb(141, 141, 250);
-}
-.destacados__menu{
-    display: flex;
-    text-transform: uppercase;
-    list-style-type: none;
-}
-.item__menu{
-    text-decoration: none;    
-    padding: 10px;
-}
+.icon__link {
+  height: 50px;
+  background-color: black; }
+  .icon__link:hover {
+    -webkit-animation: tiembla 0.1s infinite; }
 
-.main__section{
-    display: grid;   
-    grid-template-columns: 1fr; 
-}
+.pmc__desc__S {
+  font-size: 20px;
+  color: #b99dca; }
 
-.bienvenida__titulo{
-    text-align: center;    
-    color: #B4A5A5;
-}
-.desc__breve{
-    font-size: 20px;
-    color: #ffffff;
-}
-.main__fondos{
-    background: url(../Recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
-    }
-.main__titulo{
-    text-align: left;
-    color: #B4A5A5;
-    font-size: 30px;
-}
+.pmc__desc__C {
+  font-size: 20px;
+  color: #9dcaa1; }
 
-.main__destacado__reglas{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    list-style:none
-}
+.pmc__desc__F {
+  font-size: 20px;
+  color: #a3a8a3; }
 
-.item__regla{
-    color: rgb(255, 0, 0);
-    font-family: impact;
-    letter-spacing: 3px;
-}
+.pmc__desc__L {
+  font-size: 20px;
+  color: #8d8dfa; }
 
-.item__reglas{
-    color:rgb(202, 202, 202);
-    text-decoration-line: underline;
-}
+.pmc__video {
+  border-top: solid red;
+  border-bottom: solid red;
+  border-left: solid red;
+  border-right: solid red; }
 
-.item__regla5{
-    font-family: "courier new";
-    text-decoration-line: line-through;
-    color: #1a1b20;
-}
+.destacados__menu {
+  display: flex;
+  text-transform: uppercase;
+  list-style-type: none; }
 
-.main__video{
-    border-bottom: solid 15px #301B3F;
-    display: flex;
-    justify-content: left;
-}
-.section__rutina{
-    background: url(../Recursos/micrf.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
-}
-.titulo__rutina{
-    font-family: 'Courier New', Courier, monospace;
-    color: darkmagenta;
-    text-align: left;
-}
+.destacados__PMC {
+  display: flex;
+  justify-content: center; }
 
-.main__rutina_lista{
-    font-family: 'Square Peg', cursive;
-    color: turquoise;
-    border-radius: 10px;
-    width: 100%;
-}
+.destacados__quienes {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none; }
 
-.titulo__biblicos{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-}
-.items__biblicos{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: underline;
-    width: 40%;
-}
+.destacados__soulster {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.destacados__camila {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.destacados__valtiel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.destacados__lucho {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.main__section {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.main__fondos {
+  background: url(../Recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, black 0%, black 50%, black 100%); }
+
+.main__titulo {
+  text-align: left;
+  color: #B4A5A5;
+  font-size: 30px; }
+
+.main__destacado__reglas {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  list-style: none; }
+
+.main__video {
+  border-bottom: solid 15px #301B3F;
+  display: flex;
+  justify-content: left; }
+
+.main__rutina_lista {
+  font-family: 'Square Peg', cursive;
+  color: turquoise;
+  border-radius: 10px;
+  width: 100%; }
+
+.bienvenida__titulo {
+  text-align: center;
+  color: #B4A5A5; }
+
+.desc__breve {
+  font-size: 20px;
+  color: #ffffff; }
+
+.item__menu {
+  text-decoration: none;
+  padding: 10px; }
+
+.item__regla {
+  color: red;
+  font-family: impact;
+  letter-spacing: 3px; }
+
+.item__reglas {
+  color: #cacaca;
+  text-decoration-line: underline; }
+
+.item__regla5 {
+  font-family: "courier new";
+  text-decoration-line: line-through;
+  color: #1a1b20; }
+
+.section__rutina {
+  background: url(../Recursos/micrf.png) no-repeat right, linear-gradient(90deg, black 0%, black 50%, black 100%); }
+
+.titulo__rutina {
+  font-family: 'Courier New', Courier, monospace;
+  color: darkmagenta;
+  text-align: left; }
+
+.titulo__biblicos {
+  font-size: 30px;
+  color: white; }
+
+.titulo__mitos {
+  text-align: center; }
+
+.titulo__quienes {
+  align-content: center;
+  color: red;
+  font-size: 30px;
+  border-radius: 20px; }
+
+.titulo__quienes2 {
+  color: red;
+  display: flex;
+  justify-content: center; }
+
+.titulo__soulster {
+  color: blueviolet; }
+
+.titulo__camila {
+  color: green; }
+
+.titulo__valtiel {
+  color: turquoise; }
+
+.titulo__lucho {
+  justify-self: center;
+  color: #ffae00; }
+
+.titulo__mensajeria {
+  font-size: 20px; }
+
+.items__biblicos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: underline;
+  width: 40%; }
 
 /*
     
@@ -146,75 +225,63 @@ header{
 
 
 /*--------------------------------MITOS Y LEYENDAS--------------------------------*/
+.divs__mitos {
+  font-size: 20px;
+  border-radius: 10px; }
 
-.fondo__mitos_y_leyendas{
-    background-color: black;
-    background-image: url(../Recursos/void.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-}
+.img__mitos {
+  display: flex;
+  justify-content: center; }
 
-.titulo__mitos{
-    text-align: center;
-}
+.img__oculto {
+  justify-self: center;
+  gap: 10px; }
 
-.divs__mitos{
-    font-size: 20px;
-    border-radius: 10px;
-    
-}
+.img__person {
+  justify-self: center; }
 
-.img__mitos{
-    display: flex;
+.img__soulster {
+  max-height: 400px; }
 
-    justify-content: center;
-}
-.div__consejo{
-    display: grid;
-    
-}
-.div__img__oculto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-.img__oculto{
-    justify-self: center;
-    gap: 10px;
-}
-.son__humanos{
-    text-align: center;
-}
-.div__person{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
+.img__camila {
+  max-height: 400px; }
 
-.img__person{
-    justify-self: center;
-}
+.img__valtiel {
+  max-height: 400px; }
 
-.hover__zoom:hover{
-    transform:scale(2);
-}
+.img__lucho {
+  max-height: 400px; }
 
-.black__rod{color: black;
-    background-color: black;
-}
-.donde__estan{
-    display: flex;
-    justify-content: center;
-}
-.footer{
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-}
+.div__consejo {
+  display: grid; }
 
+.div__img__oculto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
 
+.div__person {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+.son__humanos {
+  text-align: center; }
+
+.hover__zoom:hover {
+  transform: scale(2); }
+
+.black__rod {
+  color: black;
+  background-color: black; }
+
+.donde__estan {
+  display: flex;
+  justify-content: center; }
+
+.footer {
+  color: white;
+  font-size: 10px; }
 
 /* PSEUDO CLASES
 :active
@@ -223,500 +290,247 @@ header{
 :first-child
 :last-child
 */
+a:visited {
+  content: "✔";
+  color: pink; }
 
-a:visited{
-    content: "✔";
-    color: pink;
-}
-a:active{
-    color: blue;
-}
+a:active {
+  color: blue; }
 
 /*--------------------------------NUESTROS ARTISTAS--------------------------------*/
-.fondo__artistas{
-    background-image: url(../Recursos/fondo.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment:fixed;
-}
+.artistas__soulster {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
-.artistas__soulster{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+.artistas__valtiel {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
+.artistas__lucho {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  justify-items: center; }
 
+.renders__soulster {
+  display: grid;
+  /* container*/
+  border-top: 10px solid purple;
+  border-bottom: 10px solid purple;
+  /*como se declara una fila,  infitinas*/
+  grid-template-rows: 32% 32% 32%;
+  /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
+  grid-template-columns: 50% 50%;
+  /*espacio entre celdas*/
+  gap: 10px; }
 
-.renders__soulster{ 
-    display: grid; /* container*/
-    border-top: 10px solid purple;
-    border-bottom: 10px solid purple;
+.renders__items {
+  border: 5px solid black;
+  background-size: cover;
+  justify-self: center;
+  background-attachment: inherit; }
 
-    /*como se declara una fila,  infitinas*/
-    grid-template-rows: 32% 32% 32%;
-    /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
-    grid-template-columns: 50% 50%;
-    /*espacio entre celdas*/
-    gap: 10px;
-}
+.sangre__y__oxido {
+  font-size: 16px;
+  background-color: black;
+  color: blueviolet;
+  border-radius: 10px; }
 
-.renders__items{
-    border: 5px solid black;
-    background-size: cover;
-    justify-self: center;
-    background-attachment: inherit;
-}
+.dibujos__valtiel {
+  display: grid;
+  border-top: 10px solid #51838a;
+  border-bottom: 10px solid #51838a;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  gap: 3px; }
 
-.sangre__y__oxido{
-    font-size: 16px;
-    background-color: black;
-    color: blueviolet;
-    border-radius: 10px;
-}
+.dibujos__items {
+  border: 5px solid red;
+  background-size: cover;
+  justify-self: center;
+  background-position: inherit; }
 
+.videos__lucho {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr;
+  justify-items: center; }
 
-.artistas__valtiel{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+/*--------------------------------QUIENES SOMOS--------------------------------*/
+.dl__soulster {
+  color: blueviolet;
+  background-color: black;
+  border-radius: 5px; }
 
+.dl__camila {
+  color: green;
+  background-color: black;
+  border-radius: 5px; }
 
-.dibujos__valtiel{
-    display:grid;
-    border-top: 10px solid rgb(81, 131, 138);
-    border-bottom: 10px solid rgb(81, 131, 138);
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    gap: 3px;
-}
+.dl__valtiel {
+  color: turquoise;
+  background-color: black;
+  border-radius: 5px; }
 
-.dibujos__items{
-    border:5px solid red;
-    background-size: cover;
-    justify-self: center;
-    background-position: inherit;
-}
+.dl__lucho {
+  color: #ffae00;
+  background-color: black;
+  border-radius: 5px; }
 
-.artistas__lucho{
+.dd__personajes {
+  font-size: 10px;
+  font-family: 'Segoe UI', sans-serif; }
+
+/*--------------------------------CONTACTO--------------------------------*/
+.link__persona {
+  color: red; }
+
+.redes__contacto {
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  align-content: center; }
+
+.destacado__mensajeria {
+  display: flex;
+  flex-direction: column;
+  color: red; }
+
+@-webkit-keyframes tiembla {
+  0% {
+    -webkit-transform: rotateZ(-5deg); }
+  50% {
+    -webkit-transform: rotateZ(0deg) scale(0.8); }
+  100% {
+    -webkit-transform: rotateZ(5deg); } }
+
+@media (min-width: 720px) and (max-width: 1200px) {
+  .fondo__artistas {
+    width: fit-content; }
+  .renders__soulster {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; }
+  .div__person {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
+
+/*tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+  .main__video {
+    max-width: 100%;
+    max-height: 100%; }
+  .artistas__soulster {
+    max-width: 100%;
+    max-height: 100%; }
+  .renders__soulster {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px; }
+  .renders__items {
+    max-width: 100%;
+    max-height: 100%; }
+  .dibujos__valtiel {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%; }
+  .dibujos__items {
+    max-width: 100%;
+    max-height: 100%; }
+  .videos__lucho {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    justify-items: center;
-}
-
-.videos__lucho{
+    grid-template-rows: 1fr 1fr; }
+  .video__item {
+    max-width: 350px;
+    max-height: 350px; }
+  .div__person {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
 
-*/
-/*--------------------------------QUIENES SOMOS--------------------------------*/
-
-
-
-
-.titulo__quienes{
-    align-content: center;
-    color: rgb(255, 0, 0);
-    font-size: 30px;
-    border-radius: 20px;
-}
-
-.destacados__PMC{   
-    display: flex;
-    justify-content: center;
-}
-
-.PMC__video{
-    border-top: solid rgb(255, 0, 0);
-    border-bottom: solid rgb(255, 0, 0);
-    border-left: solid rgb(255, 0, 0);
-    border-right: solid rgb(255, 0 , 0);
-}
-
-.destacados__quienes{
-    
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    text-decoration:none;
-}
-
-.titulo__quienes2{
-    color: red;
-    display: flex;
-    justify-content: center;
-}
-
-.destacados__soulster{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.titulo__soulster{
-    color: blueviolet;
-}
-
-.img__soulster{    
-    max-height: 400px;
-}
-
-.dl__soulster{
-    color: blueviolet;
-    background-color: black;
-    border-radius: 5px;
-}
-
-.destacados__camila{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.titulo__camila{
-    color: green
-}
-
-.img__camila{
-    max-height: 400px;
-}
-
-.dl__camila{
-    color: green;
-    background-color: black;
-    border-radius: 5px;
-}
-
-.dd__personajes{
-    font-size: 10px;
-    font-family:'Segoe UI', sans-serif;
-}
-.destacados__valtiel{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.titulo__valtiel{
-    color:turquoise;
-}
-
-.img__valtiel{
-    max-height: 400px;
-}
-
-.dl__valtiel{
-    color: turquoise;
-    background-color: black;
-    border-radius: 5px;
-}
-
-.destacados__lucho{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.titulo__lucho{
-    justify-self: center;
-    color: rgb(255, 174, 0);
-}
-
-.img__lucho{
-    max-height: 400px;
-}
-
-.dl__lucho{
-    color: rgb(255, 174, 0);
-    background-color: black;
-    border-radius: 5px;
-}
-
-.fondo__quienes_somos{
-    background-color: rgb(0, 0, 0);
-}
-
-.fondo__quienes__somos{
-    background-color: rgb(0, 0, 0);
-}
-/*--------------------------------CONTACTO--------------------------------*/
-.fondo__contacto{
-    background-image: url(../Recursos/ojo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    background-attachment: fixed;
-    background-color: rgb(30, 30, 30);
-}
-
-.link__persona{
-    color: rgb(255, 0, 0);
-}
-.redes__contacto{
-    display: grid;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-}
-
-.destacado__mensajeria{
-    display: flex;
-    flex-direction: column;
-    color: rgb(255, 0, 0);
-}
-
-.titulo__mensajeria{
-    font-size: 25px;
-}
-/*----------------GRID---------------*/
-/*
-.grid__container{
-    display:grid;
-    border: 12px solid purple;
-
-
-    /*como se declara una fila,  infitinas*/
-    /*grid-template-rows: 150px 150px 150px 150px;
-
-    /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
-    /* grid-template-columns: 1fr 1fr 1fr;
-
-    /*espacio entre celdas*/
-    /*  gap: 15px
-}*/
-/*
-.grid__item{
-    border: 5px solid black;
-}
-
-.grid__uno{
-    grid-row-start: 1;
-    grid-row-end:3;
-}
-
-.grid__cuatro{
-    grid-row:2/5;
-    grid-column: 2/3;
-}
-
-.grid__cinco{
-    grid-row:2/4;
-    grid-column:3/4;
-}
-*/
-/*
-.grid__container{
-    display: grid;
-    grid-template-rows: 70px 500px 1fr;
-    grid-template-areas:"header header header header"
-                        "main main main aside"
-                        "footer footer footer footer";
-    gap:10px;
-}
-*/
-
-/*
-.grid__container{
-    grid-template-areas:"header"
-                        "main"
-                        "footer";
-}
-*/
-
-/*  MEDIDAS RELATIVAS
-    REM--Es una medida estandar que se multiplica y toma de base el tamaño minimo de la letra
-        del dispositivo(32px 1 REM= 32px) (12px 1 REM= 12px)
-
-    EM-- Toma de base el tamaño minimo de M del dispositivo
-
-    PORCENTAJES-- Son las mas faciles, las menos recomendadas
-
-*/
-@-webkit-keyframes tiembla{
-    0%  { -webkit-transform:rotateZ(-5deg); }
-    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
-    100%{ -webkit-transform:rotateZ( 5deg); }
-}
-
-@media (min-width: 720px) and (max-width: 1200px){
-    
-    .fondo__artistas{
-        width: fit-content;
-    }
-    .renders__soulster{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-    .div__person{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
-/*tablet */
-
-@media (min-width: 541px) and (max-width: 720px){
-    
-    .main__video{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .artistas__soulster{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .renders__soulster{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .renders__items{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .dibujos__valtiel{
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-columns: 100%;
-    }
-    
-    .dibujos__items{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .videos__lucho{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .video__item{
-        max-width: 350px;
-        max-height: 350px;
-    }
-    .div__person{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
 /*phone */
-@media (min-width: 320px) and (max-width: 540px){
-    
-    .fondo{
-        width: 100%;
-        height: 100%;
-    }
-    .fondo__artistas{
-        width: 100%;
-        height: 100%;
-    }
-    .main__fondos{
-        background:black;
-    }
-    .main__video{
-        max-width: 320px;
-        max-height: 320px;
-    }
-    .main__destacado__reglas{
-        width: 100%;
-    }
-    .main__section1{
-        display: grid;
-        grid-template-rows: 1fr;
-        justify-items: center;
-    }
-    .main__section2{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .main__rutina_lista{
-        width: 100%;
-    }
-    .item__menu{
-        font-size: 10px;
-    }
-    .items__biblicos{
-        width: 100%;
-    }
-    .artistas__soulster{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .titulo__soulster{
-        font-size: 50px;
-    }
-
-    .soulster__historia{
-        color: blueviolet;
-        text-align: center;
-    }
-    .renders__soulster{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        max-width: 100%;
-    }
-    img{
-        max-width: 100%;
-        max-height: 100%;
-        overflow: hidden;
-    }
-    .renders__items{
-        max-width: 100%;
-        max-height: 100%;
-        overflow: hidden;
-    }
-    .dibujos__valtiel{
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-columns: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-    .dibujos__items{
-        max-width: 100%;
-        max-height: 100%;
-        overflow: hidden;
-    }
-    .videos__lucho{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        overflow: hidden;
-    }
-    .video__item{
-        max-width: 350px;
-        max-height: 350px;
-    }
-    .div__person{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-    .donde__estan{
-        max-width: 350px;
-    }
-}
+@media (min-width: 320px) and (max-width: 540px) {
+  .fondo {
+    width: 100%;
+    height: 100%; }
+  .fondo__artistas {
+    width: 100%;
+    height: 100%; }
+  .main__fondos {
+    background: black; }
+  .main__video {
+    max-width: 320px;
+    max-height: 320px; }
+  .main__destacado__reglas {
+    width: 100%; }
+  .main__section1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center; }
+  .main__section2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .main__rutina_lista {
+    width: 100%; }
+  .item__menu {
+    font-size: 10px; }
+  .items__biblicos {
+    width: 100%; }
+  .artistas__soulster {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .titulo__soulster {
+    font-size: 50px; }
+  .soulster__historia {
+    color: blueviolet;
+    text-align: center; }
+  .renders__soulster {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    max-width: 100%; }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; }
+  .renders__items {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; }
+  .dibujos__valtiel {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+    max-width: 100%;
+    overflow: hidden; }
+  .dibujos__items {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; }
+  .videos__lucho {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden; }
+  .video__item {
+    max-width: 350px;
+    max-height: 350px; }
+  .div__person {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+  .donde__estan {
+    max-width: 350px; } }
