@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'sasscript.scss';
 
 *{
 	margin: 0;
@@ -237,16 +238,6 @@ header{
     width: 40%;
 }
 
-/*
-    
-
-    https://codepen.io/enxaneta/full/adLPwv
-    https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
-
-
-
-
-
 /*--------------------------------MITOS Y LEYENDAS--------------------------------*/
 
 
@@ -317,16 +308,6 @@ header{
     font-size: 10px;
 }
 
-
-
-/* PSEUDO CLASES
-:active
-:hoover
-:visited
-:first-child
-:last-child
-*/
-
 a{
     &:visited{
     content: "✔";
@@ -362,15 +343,11 @@ a{
 
 .renders{
     &__soulster{ 
-        display: grid; /* container*/
+        display: grid; 
         border-top: 10px solid purple;
         border-bottom: 10px solid purple;
-    
-        /*como se declara una fila,  infitinas*/
         grid-template-rows: 32% 32% 32%;
-        /*como se declara una columna,   hasta 12, 1fr(fraccion)*/
         grid-template-columns: 50% 50%;
-        /*espacio entre celdas*/
         gap: 10px;
     }
     &__items{
@@ -472,6 +449,8 @@ a{
     100%{ -webkit-transform:rotateZ( 5deg); }
 }
 
+
+
 @media (min-width: 720px) and (max-width: 1200px){
     
     .fondo__artistas{
@@ -536,6 +515,27 @@ a{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+}
+/* MAP */
+$renders: (key: render, key1: render1, key2: render2, key3: render3, key4: render4, key5: render5);
+
+
+/* EACH */
+@each $key, $render in $renders{
+    .#{$key}-render{
+        background-image: url(../Recursos/scss/#{$render}.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-items: center;
+        align-self: center;
+        @if $key != key{
+            height: 300px;
+            width: 500px;
+        } @else{
+            height: 340px;
+            width: 300px;
+        }
     }
 }
 /*phone */
@@ -609,6 +609,37 @@ a{
         max-height: 100%;
         overflow: hidden;
     }
+    .key{
+        &-render{
+            width: 270px;
+            height: 310px;
+            background-size: cover;
+        }
+        &1-render{
+            width: 320px;
+            height: 190px;
+            background-size: cover;}
+        &2-render{
+            width: 320px;
+            height: 190px;
+            background-size: cover;
+        }
+        &3-render{
+            width: 320px;
+            height: 190px;
+            background-size: cover;
+        }
+        &4-render{
+            width: 320px;
+            height: 190px;
+            background-size: cover;
+        }
+        &5-render{
+            width: 320px;
+            height: 190px;
+            background-size: cover;
+        }
+    }
     .dibujos__valtiel{
         display: grid;
         grid-template-rows: 25% 25% 25% 25%;
@@ -628,7 +659,7 @@ a{
         overflow: hidden;
     }
     .video__item{
-        max-width: 350px;
+        max-width: 320px;
         max-height: 350px;
     }
     .div__person{
@@ -637,6 +668,42 @@ a{
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     .donde__estan{
-        max-width: 350px;
+        max-width: 320px;
     }
 }
+
+
+
+
+/* EXTEND */
+
+/*
+.error{
+    color:red;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.slide-error{
+    background-color: black;
+    @extend .error;
+}
+
+.card-error{
+    background-color: #462c2c;
+    @extend .error;
+}
+
+/* MIXIN */
+
+/*
+@mixin mixDesayuno ($color, $size) {
+    background-image: url(../Recursos/ojo.png);
+    color: $color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $size;
+
+}
+.card-desayuno{
+    @include mixDesayuno(beige, 3rem )
+}*/
