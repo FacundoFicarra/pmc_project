@@ -36,9 +36,9 @@
         background-color: $color-principal;
     }
     &__contacto{
-        background-image: url(../Recursos/ojo.png);
+        background-image: url(../Recursos/contacto__fondo.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: top;
         background-attachment: fixed;
         background-color: rgb(30, 30, 30);
@@ -426,6 +426,8 @@ a{
 
 .link__persona{
     color: rgb(255, 0, 0);
+    background-color: #ffffff;
+    border-radius: 7px;
 }
 .redes__contacto{
     display: grid;
@@ -437,10 +439,11 @@ a{
     align-content: center;
 }
 
-.destacado__mensajeria{
+.invitacion__discord{
     display: flex;
-    flex-direction: column;
-    color: rgb(255, 0, 0);
+    font-family: Arial;
+    font-size: large;
+    color: rgb(0, 0, 0);
 }
 
 @-webkit-keyframes tiembla{
@@ -671,31 +674,12 @@ $renders: (key: render, key1: render1, key2: render2, key3: render3, key4: rende
         max-width: 320px;
     }
 }
-
-
-
-
-/* EXTEND */
-
-/*
-.error{
-    color:red;
-    font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.slide-error{
-    background-color: black;
-    @extend .error;
-}
-
-.card-error{
-    background-color: #462c2c;
-    @extend .error;
-}
-
 /* MIXIN */
 
+@mixin heigthWidth($height, $width){
+    width: 350px;
+    height: 350px;
+}
 /*
 @mixin mixDesayuno ($color, $size) {
     background-image: url(../Recursos/ojo.png);

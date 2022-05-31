@@ -30,9 +30,9 @@
   .fondo__quienes__somos {
     background-color: black; }
   .fondo__contacto {
-    background-image: url(../Recursos/ojo.png);
+    background-image: url(../Recursos/contacto__fondo.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-attachment: fixed;
     background-color: #1e1e1e; }
@@ -364,7 +364,9 @@ a:active {
 
 /*--------------------------------CONTACTO--------------------------------*/
 .link__persona {
-  color: red; }
+  color: red;
+  background-color: #ffffff;
+  border-radius: 7px; }
 
 .redes__contacto {
   display: grid;
@@ -375,10 +377,11 @@ a:active {
   align-self: center;
   align-content: center; }
 
-.destacado__mensajeria {
+.invitacion__discord {
   display: flex;
-  flex-direction: column;
-  color: red; }
+  font-family: Arial;
+  font-size: large;
+  color: black; }
 
 @-webkit-keyframes tiembla {
   0% {
@@ -593,24 +596,6 @@ a:active {
     grid-template-rows: 1fr 1fr 1fr 1fr; }
   .donde__estan {
     max-width: 320px; } }
-
-/* EXTEND */
-/*
-.error{
-    color:red;
-    font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.slide-error{
-    background-color: black;
-    @extend .error;
-}
-
-.card-error{
-    background-color: #462c2c;
-    @extend .error;
-}
 
 /* MIXIN */
 /*
