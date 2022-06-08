@@ -124,10 +124,6 @@ header{
 
 
 .main{
-    &__section{
-        display: grid;   
-        grid-template-columns: 1fr; 
-    }
     &__fondos{
         background: url(../Recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
     }
@@ -334,7 +330,10 @@ a{
     }
 }
 
-
+.soulster__historia{
+    color: blueviolet;
+    text-align: center;
+}
 
 .renders{
     &__soulster{ 
@@ -351,6 +350,10 @@ a{
         justify-self: center;
         background-attachment: inherit;
     }
+}
+
+.soulster__renders{
+    padding-left: 20px;
 }
 
 .sangre__y__oxido{
@@ -387,31 +390,38 @@ a{
 
 /*--------------------------------QUIENES SOMOS--------------------------------*/
 
-
-.dl{
+.span{
     &__soulster{
         color: blueviolet;
         background-color: $color-principal;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
     }
     &__camila{
         color: green;
         background-color: $color-principal;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
     }
     &__valtiel{
         color: turquoise;
         background-color: $color-principal;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
     }
     &__lucho{
         color: rgb(255, 174, 0);
         background-color: $color-principal;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
-.dd__personajes{
+.span__personajes{
     font-size: 10px;
     font-family:'Segoe UI', sans-serif;
 }
@@ -583,7 +593,7 @@ $renders: (key: render, key1: render1, key2: render2, key3: render3, key4: rende
         &__menu{
             font-size: 10px;
         }
-        &__biblicos{
+        &s__biblicos{
             width: 100%;
         }
     }
@@ -596,10 +606,10 @@ $renders: (key: render, key1: render1, key2: render2, key3: render3, key4: rende
     .titulo__soulster{
         font-size: 50px;
     }
-
-    .soulster__historia{
-        color: blueviolet;
-        text-align: center;
+    .div__img__oculto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .renders{
         &__soulster{

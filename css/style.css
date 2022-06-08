@@ -108,10 +108,6 @@ header {
   flex-direction: column;
   justify-content: center; }
 
-.main__section {
-  display: grid;
-  grid-template-columns: 1fr; }
-
 .main__fondos {
   background: url(../Recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, black 0%, black 50%, black 100%); }
 
@@ -292,6 +288,10 @@ a:active {
   grid-template-rows: 3fr;
   justify-items: center; }
 
+.soulster__historia {
+  color: blueviolet;
+  text-align: center; }
+
 .renders__soulster {
   display: grid;
   border-top: 10px solid purple;
@@ -305,6 +305,9 @@ a:active {
   background-size: cover;
   justify-self: center;
   background-attachment: inherit; }
+
+.soulster__renders {
+  padding-left: 20px; }
 
 .sangre__y__oxido {
   font-size: 16px;
@@ -333,27 +336,35 @@ a:active {
   justify-items: center; }
 
 /*--------------------------------QUIENES SOMOS--------------------------------*/
-.dl__soulster {
+.span__soulster {
   color: blueviolet;
   background-color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; }
 
-.dl__camila {
+.span__camila {
   color: green;
   background-color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; }
 
-.dl__valtiel {
+.span__valtiel {
   color: turquoise;
   background-color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; }
 
-.dl__lucho {
+.span__lucho {
   color: #ffae00;
   background-color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; }
 
-.dd__personajes {
+.span__personajes {
   font-size: 10px;
   font-family: 'Segoe UI', sans-serif; }
 
@@ -518,7 +529,7 @@ a:active {
     width: 100%; }
   .item__menu {
     font-size: 10px; }
-  .item__biblicos {
+  .items__biblicos {
     width: 100%; }
   .artistas__soulster {
     display: grid;
@@ -527,9 +538,10 @@ a:active {
     justify-items: center; }
   .titulo__soulster {
     font-size: 50px; }
-  .soulster__historia {
-    color: blueviolet;
-    text-align: center; }
+  .div__img__oculto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
   .renders__soulster {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
