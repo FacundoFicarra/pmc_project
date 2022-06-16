@@ -11,14 +11,19 @@
     background-color: red;
 }
 
+section{
+    padding: 5px;
+}
 .fondo{
+    margin:0px;
+    padding: 0px;
     background-color: $color-principal;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     &__mitos_y_leyendas{
         background-color: $color-principal;
-        background-image: url(../Recursos/void.jpg);
+        background-image: url(../recursos/void.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -26,7 +31,7 @@
         color: $color-secundario;
     }
     &__artistas{
-        background-image: url(../Recursos/fondo.png);
+        background-image: url(../recursos/fondo.png);
         background-position: center;
         background-size: cover;
         background-attachment:fixed;
@@ -35,7 +40,7 @@
         background-color: $color-principal;
     }
     &__contacto{
-        background-image: url(../Recursos/contacto__fondo.jpg);
+        background-image: url(../recursos/contacto__fondo.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -43,10 +48,10 @@
         background-color: rgb(30, 30, 30);
     }
 }
-
 header{
     display:flex;
     justify-content: center;
+    background-color: black;
 }
 
 .icon__link{
@@ -125,7 +130,7 @@ header{
 
 .main{
     &__fondos{
-        background: url(../Recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+        background: url(../recursos/themanwithatie2.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
     }
     &__titulo{
         text-align: left;
@@ -182,7 +187,7 @@ header{
 }
 
 .section__rutina{
-    background: url(../Recursos/micrf.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    background: url(../recursos/micrf.png) no-repeat right, linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
 }
 .titulo{
     &__rutina{
@@ -290,17 +295,16 @@ header{
 .hover__zoom:hover{
     transform:scale(2);
 }
-a
-.black__rod{
-    background-color: $color-principal;
-}
+
 .donde__estan{
     display: flex;
     justify-content: center;
 }
-.footer{
+
+footer{
     color: $color-secundario;
     font-size: 10px;
+    background-color: black;
 }
 
 a{
@@ -338,8 +342,7 @@ a{
 .renders{
     &__soulster{ 
         display: grid; 
-        border-top: 10px solid purple;
-        border-bottom: 10px solid purple;
+        border: 10px solid purple;
         grid-template-rows: 32% 32% 32%;
         grid-template-columns: 50% 50%;
         gap: 10px;
@@ -366,8 +369,7 @@ a{
 .dibujos{
     &__valtiel{
         display:grid;
-        border-top: 10px solid rgb(81, 131, 138);
-        border-bottom: 10px solid rgb(81, 131, 138);
+        border: 10px solid rgb(81, 131, 138);
         grid-template-rows: 50% 50%;
         grid-template-columns: 50% 50%;
         gap: 3px;
@@ -447,7 +449,7 @@ a{
     display: flex;
     font-family: Arial;
     font-size: large;
-    color: $color-principal;
+    color: $color-secundario
 }
 
 @-webkit-keyframes tiembla{
@@ -455,8 +457,6 @@ a{
     50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
     100%{ -webkit-transform:rotateZ( 5deg); }
 }
-
-
 
 @media (min-width: 720px) and (max-width: 1200px){
     
@@ -537,7 +537,7 @@ $renders: (key: render, key1: render1, key2: render2, key3: render3, key4: rende
 /* EACH */
 @each $key, $render in $renders{
     .#{$key}-render{
-        background-image: url(../Recursos/scss/#{$render}.jpg);
+        background-image: url(../recursos/scss/#{$render}.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         align-items: center;
